@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="gb2312"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+    <title>
+      拓瑞检测帮助系统
+    </title>
+    <link href="Css/Help.css" rel="stylesheet" type="text/css"/>
+    <link href="Content/css/top.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js">
+    </script>
+    <!--<script type="text/javascript" src="js/Prototype.js"></script>-->    <script type="text/javascript" src="js/public.js">
+    </script>
+    <script src="Content/CuPlayer/images/swfobject.js">
+    </script>
+    <style type="text/css">
+      
+        body {
+            background-color: #FFFFFF;
+            color: black;
+        }
+
+        .LableSelectItem {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+
+        .LableItem {
+            cursor: pointer;
+        }
+
+        .SubItem {
+            margin-left: 15px;
+        }
+
+        .RootItem {
+            margin-left: 15px;
+        }
+
+        body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            line-height: 120%;
+            font-size: 12px;
+            border: none;
+            padding-right: 0;
+            padding-left: 0;
+            background-color: #FFFFFF;
+        }
+
+        form {
+            padding-right: 0;
+            padding-left: 0;
+            width: 190px;
+            display: inline-block;
+        }
+
+        .back1 {
+            background-image: url(Image/y_newcontent16.gif);
+            height: 25px;
+        }
+
+        .back2 {
+            background-image: url(Image/y_newcontent15.gif);
+            height: 25px;
+        }
+
+        div {
+            margin: 0px;
+            padding-left: 0;
+            padding-right: 0;
+            background-color: #FFFFFF;
+        }
+
+        .div1 {
+            float: left;
+            border: 1px solid #AAC1DE;
+            margin: 15px 5px 5px 5px;
+        }
+
+        #div2 {
+            position: absolute;
+            left: 210px;
+            padding-top: 5px;
+            padding-left: 10px;
+            margin-bottom: 30px;
+            min-width: 800px;
+        }
+
+        #faqResult {
+            display: inline-block;
+            padding: 5px 10px 10px 10px;
+            min-height: 400px;
+        }
+
+            #faqResult div {
+                margin-bottom: 0px;
+            }
+
+        #Title {
+            font-size: 20px;
+            padding-top: 0px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+            #Title b {
+                font-size: 20px;
+                font-family: 'Microsoft YaHei',Verdana;
+                border-left: 8px #7E5AC3 solid;
+                padding-left: 10px;
+                font-weight: normal;
+            }
+
+            #Title p {
+                margin-bottom: 10px;
+            }
+
+        a {
+            font-size: 12px;
+            font-family: 'Microsoft YaHei';
+        }
+
+            a:hover {
+                color: #4a7099;
+            }
+
+        .newlogo {
+            background-color: #262626;
+        }
+
+            .newlogo a:hover {
+                text-decoration: none;
+                -webkit-filter: brightness(1.2);
+            }
+
+            .newlogo img:hover {
+            }
+
+        .searchArea {
+            background: #EFF5FB;
+            padding: 8px 10px;
+            text-align: center;
+            border-bottom: 1px solid #d6dfea;
+            border-top: 1px solid #262626;
+            height: 30px;
+        }
+
+            .searchArea span {
+                font-size: 14px;
+                font-family: 'Microsoft YaHei',Verdana;
+                line-height: 1.6;
+            }
+
+        #TitleList {
+            width: auto;
+        }
+
+        .heading a:hover {
+            text-decoration: none;
+            background-color: none;
+            background: none;
+        }
+
+        .div1 div div {
+            margin-bottom: 2px;
+            margin-top: 2px;
+        }
+
+        .div1 a {
+            color: #1E5494;
+            display: inline-block;
+            width: 148px;
+            height: 20px;
+            margin-top: -5px;
+            font-size: 13px;
+        }
+
+        .div1 div div div a {
+            width: 133px;
+        }
+
+        .div1 div div div div div a {
+            width: 118px;
+        }
+
+        .div1 .span {
+            display: inline-block;
+            height: 20px;
+            padding-top: 6px;
+        }
+
+        .active a {
+            color: #fff;
+        }
+
+        .active {
+            background-color: #2694d6;
+            background-repeat: repeat-y;
+        }
+
+        .div1 img {
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+            .div1 img:hover {
+                cursor: pointer;
+            }
+
+        .resultli a {
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 6px;
+            margin-left: 28px;
+        }
+
+        .heading {
+            height: 55px;
+            padding-top: 2px;
+            background-color: #262626;
+            margin-bottom: 0;
+            border-bottom: 1px;
+            border-bottom-color: #262626;
+        }
+
+        .searchArea {
+            background-color: #3693CF;
+            margin-top: 0;
+        }
+
+        #copyright {
+            position: relative;
+            margin-top: 100px;
+            margin-bottom: 0px;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        #faqResult div {
+            margin-bottom: 13px;
+            margin-top: 10px;
+        }
+
+            #faqResult div span {
+                margin-left: 0px;
+            }
+
+            #faqResult div img {
+                margin-left: 30px;
+            }
+
+            #faqResult div a {
+                font-size: 15px;
+            }
+
+        #faqResult p {
+            font-size: 14px;
+            font-family: 'Microsoft YaHei';
+            line-height: 25px;
+            text-indent: 2em;
+            font-weight: 100;
+        }
+    
+    </style>
+    <script type="text/javascript">
+//<![CDATA[
+
+        //这里是jquery代码
+        //var $ = jQuery.noConflict();
+        var SelectClass = "";
+        function SwitchImg(ImgObj, ParentId) {
+            var ImgSrc = "";
+            var SubImgSrc = "";
+            ImgSrc = ImgObj.src;
+            SubImgSrc = ImgSrc.substr(ImgSrc.length - 5, 5);
+            if (SubImgSrc == "p.ico") {
+                ImgObj.src = ImgObj.src.replace(SubImgSrc, "d.ico");
+                ImgObj.title = "收起";
+                SwitchSub(ParentId, true);
+            } else {
+                if (SubImgSrc == "d.ico") {
+                    ImgObj.src = ImgObj.src.replace(SubImgSrc, "p.ico");
+                    ImgObj.title = "展开";
+                    SwitchSub(ParentId, false);
+                } else {
+                    return false;
+                }
+            }
+        }
+        function SwitchSub(ParentId, ShowFlag) {
+            if (ShowFlag) {
+                $("#Parent" + ParentId).show();
+                if ($("#Parent" + ParentId).html() == "" || $("#Parent" + ParentId).html() == "帮助加载中...") {
+                    $("#Parent" + ParentId).html("帮助加载中...");
+                    GetSubClass(ParentId);
+                }
+            } else {
+                $("#Parent" + ParentId).hide();
+            }
+        }
+        function SwitchSub1(txtObj, ParentId) {
+            txtObj.Id = "1";
+            var ImgObj = txtObj.parentNode.childNodes[0];
+            var ImgSrc = "";
+            var SubImgSrc = "";
+            ImgSrc = ImgObj.src;
+            SubImgSrc = ImgSrc.substr(ImgSrc.length - 5, 5);
+            GetSubClass(ParentId);
+            if ($("#Parent" + ParentId).show()) {
+                $("#Parent" + ParentId).hide();
+                ImgObj.src = ImgObj.src.replace(SubImgSrc, "p.ico");
+            } else {
+                $("#Parent" + ParentId).show();
+                ImgObj.src = ImgObj.src.replace(SubImgSrc, "d.ico");
+            }
+        }
+        function SelectLable(Obj){
+            //点击左侧菜单条目触发此方法
+            var SelectedInfo = "";
+            if (SelectClass != "") {
+                SelectedInfo = SelectClass.split("***");
+                $(SelectedInfo[0]).addClass("LableItem");
+            }
+            Obj.addClass('LableSelectItem');
+            SelectClass = Obj.id + "***" + Obj.innerText + "***" + Obj.value;
+        }
+        function GetRootClass() {
+            GetSubClass("0");
+            //进入系统显示的首页内容
+            if ($("#searchkey").val() == "") {
+                $.get("HelpSearchAjax.aspx", { ClassID: "708959959638", Action: "Content", rd: Math.random() }, function (data) {
+                    if (data.indexOf("??") > -1) {
+                        $("#faqResult").show();
+                        $("#faqResult").html("Error");
+                    }
+                    else {
+                        $("#faqResult").show();
+                        $("#faqResult").html(data);
+                        $("#Title").html("<b>欢迎使用拓瑞宠物医院管理帮助系统</b>");
+                    }
+                });
+            }
+        }
+
+
+        function GetSubClass(ParentId) {
+            $.get("Help_Ajax.aspx", { ParentId: ParentId }, function (data) {
+                var ClassInfo;
+                if (data != "" && data.indexOf("|||") > -1) {
+                    ClassInfo =data.split("|||");
+                    if (ClassInfo[0] == "Succee") {
+                        $("#Parent" + ClassInfo[1]).html(ClassInfo[2]);
+                    }
+                    else {
+                        $("#Parent" + ClassInfo[1]).html("<a href=\"点击重试\" onclick=\"$('#Parent" + ClassInfo[1] + "').html('帮助加载中...');GetSubClass('" + ClassInfo[1] + "');return false;\">点击重试</a>");
+                    }
+                }
+                else {
+                    alert("读取帮助错误.\n请联系管理员.");
+                    return false;
+                }
+            });
+        }
+
+        function SubmitLable(Obj) {
+            SelectLable(Obj);
+            window.returnValue = SelectClass;
+            window.close();
+        }
+        function SetReturnValue() {
+            window.returnValue = SelectClass;
+            if (typeof (window.returnValue) != 'string') {
+                window.returnValue = '';
+            }
+        }
+        function Select(type) {
+            switch (type) {
+                case "Menu":
+                    $("#TrMenu").addClass("back2");
+                    $("#TrSearch").addClass("back1");
+                    $("#Div_Searck").hide();
+                    GetRootClass();
+                    break;
+                case "Search":
+                    $("#TrMenu").addClass("back1");
+                    $("#TrSearch").addClass("back2");
+                    $("#Div_Searck").show();
+                    $("#Parent0").empty().append("请输入要查找的内容");
+                    break;
+            }
+        }
+        function GetSeachResult(key) {
+            $("#Parent0").show().html(" <img src=\"Image/loading.gif\" />请稍侯...");
+            $.get("HelpSearchAjax.aspx?Action=Search", "Key=" + key, function (data) {
+                $("#Title").hide();
+                if (data.indexOf("??") > -1) {
+                    $("#faqResult").empty().append("Error");
+                }
+                else {
+                    $("#faqResult").empty().append(data);
+                }
+                $("#Parent0").hide();
+            });
+        }
+        //显示详细结果
+        function showTitle(obj) {
+            $.get("HelpSearchAjax.aspx", { Action: "Title", ClassID: obj.id, rd: Math.random() }, function (data) {
+                if (data.indexOf("??") > -1) {
+                    $("#Title").show();
+                    $("#Title").empty().append("Error");
+                }
+                else {
+                    $("#Title").show();
+                    $("#Title").empty().append(data);
+                }
+            });
+        }
+        function showDetail(obj) {
+            if (obj.parentNode.childNodes[0].src != null) {
+                if (obj.parentNode.childNodes[0].src.substr(obj.parentNode.childNodes[0].src.length - 5, 5) == "1.ico") {
+                    $.get("HelpSearchAjax.aspx", { Action: "Content", ClassID: obj.id, rd: Math.random() }, function (data) {
+                        if (data.indexOf("??") > -1)
+                            $("#faqResult").empty().append("Error");
+                        else
+                            $("#faqResult").empty().append(data);
+                    });
+                }
+                else {
+                    $.get("Help_Ajax.aspx", { ParentId: obj.id }, function (data) {
+                        if (data.indexOf("??") > -1) {
+                            $("#faqResult").show();
+                            $("#faqResult").empty().append("Error");
+                        }
+                        else {
+                            $("#faqResult").show();
+                            var ClassInfo = data.split("|||");
+                            $("#faqResult").empty().append(ClassInfo[2]);
+                        }
+                    });
+                }
+            } else {
+                $.get("HelpSearchAjax.aspx", { Action: "Content", ClassID: obj.id, rd: Math.random() }, function (data) {
+                    if (data.indexOf("??") > -1)
+                        $("#faqResult").empty().append("Error");
+                    else
+                        $("#faqResult").empty().append(data);
+                });
+            }
+            showTitle(obj);
+        }
+        function change() {
+            $(function () {
+                $(".span").click(function () {
+                    $("*").removeClass("active");
+                    $(this).addClass("active");
+                });
+            });
+        }
+        $(function () {
+            GetRootClass();
+            SetReturnValue();
+            $("#tj").click(function () {
+                var v = $("#searchkey").val();
+                if (v == "") {
+                    alert('请输入关键字!');
+                    return false;
+                }
+                GetSeachResult(v);
+                GetRootClass();
+            });
+        });
+    
+//]]>
+    </script>
+  </head>
+  <body ondragstart="return false;">
+    <div class="heading" style="overflow:hidden;">
+      <div class="newlogo">
+        <a href="#">
+          <!--<img src="image/NewLogo.png" height="50" />-->          <img src="http://yun.tuoruimed.com/Content/p/logo1.png" style="height:50px; padding-top:3px; float:left;padding-left:10px;"/>
+          <span style="float:left;font-family:'Microsoft YaHei';font-size:25px;line-height:33px;color:#FFF;border-left:1px solid #939393; margin:10px 0px 0px 10px; padding-left:10px;">
+            帮助中心
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="searchArea" style="overflow:hidden;padding:0,25px,5px,25px;">
+      <span style="vertical-align:middle; margin-right:5px; font-weight:100; color:#fff;">
+        问题搜索
+      </span>
+      <form id="TitleList" name="TitleList" action="" method="post">
+        <input id="searchkey" name="SearchKey" autofocus="autofocus" type="text" onkeypress="if (event.keyCode == 13) { tj.click(); return false; }" size="10" class="form" height="50" style="width:390px;height:20px;font-size:15px;vertical-align:middle;font-family:Verdana;background-color:#E9E9E9; padding:2px 0 4px 5px;border:1px solid #CCC;"/>
+        <input id="tj" type="button" name="Tj" value=" 搜索 " class="form" style="width:80px;height:28px;vertical-align:middle; background-color:#E9E9E9;font-size:13px;font-weight:bold;"/>
+      </form>
+    </div>
+    <div class="div1">
+      <table id="help2col" cellspacing="0" cellpadding="0" style="display:inline-block; width:190px">
+        <tbody>
+          <tr>
+            <td valign="top" id="colleft" width="190px" height="100%">
+              <table width="190" border="0" cellspacing="0" cellpadding="0" style="font-size:12px;">
+                <tbody>
+                  <tr>
+                    <td colspan="2" height="3"/>
+                  </tr>
+                  <tr>
+                    <td colspan="3" id="Div_Searck" style="display:none;">
+                      <br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <br/>
+                      <div id="Parent0" class="RootItem">
+                        <div>
+                          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                          <span class="span" id="708959959638" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              拓瑞宠物医院管理系统
+                            </a>
+                          </span>
+                        </div>
+                        <div>
+                          <img src="image/p.ico" alt="点击展开子栏目" title="展开" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'604277469222');"/>
+                          <span class="span" id="604277469222" ondblclick="javascript:SwitchSub1(this,'604277469222');" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              安装运行
+                            </a>
+                          </span>
+                          <div id="Parent604277469222" class="SubItem" hassub="True" style="display:none;">
+                          </div>
+                        </div>
+                        <div>
+                          <img src="image/p.ico" alt="点击展开子栏目" title="展开" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'708327116645');"/>
+                          <span class="span" id="708327116645" ondblclick="javascript:SwitchSub1(this,'708327116645');" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              宠物管理系统
+                            </a>
+                          </span>
+                          <div id="Parent708327116645" class="SubItem" hassub="True" style="display:none;">
+                          </div>
+                        </div>
+                        <div>
+                          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                          <span class="span" id="143709048923" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              微网站管理
+                            </a>
+                          </span>
+                        </div>
+                        <div>
+                          <img src="image/p.ico" alt="点击展开子栏目" title="展开" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'014103469410');"/>
+                          <span class="span" id="014103469410" ondblclick="javascript:SwitchSub1(this,'014103469410');" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              常见问题
+                            </a>
+                          </span>
+                          <div id="Parent014103469410" class="SubItem" hassub="True" style="display:none;">
+                          </div>
+                        </div>
+                        <div>
+                          <img src="image/p.ico" alt="点击展开子栏目" title="展开" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'952804461429');"/>
+                          <span class="span" id="952804461429" ondblclick="javascript:SwitchSub1(this,'952804461429');" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              在线视频课堂
+                            </a>
+                          </span>
+                          <div id="Parent952804461429" class="SubItem" hassub="True" style="display:none;">
+                          </div>
+                        </div>
+                        <div>
+                          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                          <span class="span" id="065249907314" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              附录
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      <br/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="div2">
+      <p id="Title">
+        <font size="2">
+          <b cite="" datetime="">
+            安装与激活视频
+          </b>
+        </font>
+      </p>
+      <div id="faqResult">
+        <div class="video" id="CuPlayer">
+          <strong>
+            您的Flash Player版本过低，请升级您的Flash！
+          </strong>
+        </div>
+      </div>
+      <div id="copyright">
+        <p style="color:black;text-align:center; ">
+          Tuoruimed.com ?2016  
+          <a href="http://yun.tuoruimed.com" target="_blank">
+            拓瑞宠物医院
+          </a>
+        </p>
+      </div>
+    </div>
+    <script src="Content/js/top.js">
+    </script>
+    <a href="javascript:;" onclick="gotoTop();return false;" class="totop"/>
+  </body>
+</html>

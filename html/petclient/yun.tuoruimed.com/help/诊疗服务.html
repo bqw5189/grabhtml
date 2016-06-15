@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="gb2312"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+    <title>
+      拓瑞检测帮助系统
+    </title>
+    <link href="Css/Help.css" rel="stylesheet" type="text/css"/>
+    <link href="Content/css/top.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js">
+    </script>
+    <!--<script type="text/javascript" src="js/Prototype.js"></script>-->    <script type="text/javascript" src="js/public.js">
+    </script>
+    <script src="Content/CuPlayer/images/swfobject.js">
+    </script>
+    <style type="text/css">
+      
+        body {
+            background-color: #FFFFFF;
+            color: black;
+        }
+
+        .LableSelectItem {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+
+        .LableItem {
+            cursor: pointer;
+        }
+
+        .SubItem {
+            margin-left: 15px;
+        }
+
+        .RootItem {
+            margin-left: 15px;
+        }
+
+        body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            line-height: 120%;
+            font-size: 12px;
+            border: none;
+            padding-right: 0;
+            padding-left: 0;
+            background-color: #FFFFFF;
+        }
+
+        form {
+            padding-right: 0;
+            padding-left: 0;
+            width: 190px;
+            display: inline-block;
+        }
+
+        .back1 {
+            background-image: url(Image/y_newcontent16.gif);
+            height: 25px;
+        }
+
+        .back2 {
+            background-image: url(Image/y_newcontent15.gif);
+            height: 25px;
+        }
+
+        div {
+            margin: 0px;
+            padding-left: 0;
+            padding-right: 0;
+            background-color: #FFFFFF;
+        }
+
+        .div1 {
+            float: left;
+            border: 1px solid #AAC1DE;
+            margin: 15px 5px 5px 5px;
+        }
+
+        #div2 {
+            position: absolute;
+            left: 210px;
+            padding-top: 5px;
+            padding-left: 10px;
+            margin-bottom: 30px;
+            min-width: 800px;
+        }
+
+        #faqResult {
+            display: inline-block;
+            padding: 5px 10px 10px 10px;
+            min-height: 400px;
+        }
+
+            #faqResult div {
+                margin-bottom: 0px;
+            }
+
+        #Title {
+            font-size: 20px;
+            padding-top: 0px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+            #Title b {
+                font-size: 20px;
+                font-family: 'Microsoft YaHei',Verdana;
+                border-left: 8px #7E5AC3 solid;
+                padding-left: 10px;
+                font-weight: normal;
+            }
+
+            #Title p {
+                margin-bottom: 10px;
+            }
+
+        a {
+            font-size: 12px;
+            font-family: 'Microsoft YaHei';
+        }
+
+            a:hover {
+                color: #4a7099;
+            }
+
+        .newlogo {
+            background-color: #262626;
+        }
+
+            .newlogo a:hover {
+                text-decoration: none;
+                -webkit-filter: brightness(1.2);
+            }
+
+            .newlogo img:hover {
+            }
+
+        .searchArea {
+            background: #EFF5FB;
+            padding: 8px 10px;
+            text-align: center;
+            border-bottom: 1px solid #d6dfea;
+            border-top: 1px solid #262626;
+            height: 30px;
+        }
+
+            .searchArea span {
+                font-size: 14px;
+                font-family: 'Microsoft YaHei',Verdana;
+                line-height: 1.6;
+            }
+
+        #TitleList {
+            width: auto;
+        }
+
+        .heading a:hover {
+            text-decoration: none;
+            background-color: none;
+            background: none;
+        }
+
+        .div1 div div {
+            margin-bottom: 2px;
+            margin-top: 2px;
+        }
+
+        .div1 a {
+            color: #1E5494;
+            display: inline-block;
+            width: 148px;
+            height: 20px;
+            margin-top: -5px;
+            font-size: 13px;
+        }
+
+        .div1 div div div a {
+            width: 133px;
+        }
+
+        .div1 div div div div div a {
+            width: 118px;
+        }
+
+        .div1 .span {
+            display: inline-block;
+            height: 20px;
+            padding-top: 6px;
+        }
+
+        .active a {
+            color: #fff;
+        }
+
+        .active {
+            background-color: #2694d6;
+            background-repeat: repeat-y;
+        }
+
+        .div1 img {
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+            .div1 img:hover {
+                cursor: pointer;
+            }
+
+        .resultli a {
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 6px;
+            margin-left: 28px;
+        }
+
+        .heading {
+            height: 55px;
+            padding-top: 2px;
+            background-color: #262626;
+            margin-bottom: 0;
+            border-bottom: 1px;
+            border-bottom-color: #262626;
+        }
+
+        .searchArea {
+            background-color: #3693CF;
+            margin-top: 0;
+        }
+
+        #copyright {
+            position: relative;
+            margin-top: 100px;
+            margin-bottom: 0px;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        #faqResult div {
+            margin-bottom: 13px;
+            margin-top: 10px;
+        }
+
+            #faqResult div span {
+                margin-left: 0px;
+            }
+
+            #faqResult div img {
+                margin-left: 30px;
+            }
+
+            #faqResult div a {
+                font-size: 15px;
+            }
+
+        #faqResult p {
+            font-size: 14px;
+            font-family: 'Microsoft YaHei';
+            line-height: 25px;
+            text-indent: 2em;
+            font-weight: 100;
+        }
+    
+    </style>
+    <script type="text/javascript">
+//<![CDATA[
+
+        //这里是jquery代码
+        //var $ = jQuery.noConflict();
+        var SelectClass = "";
+        function SwitchImg(ImgObj, ParentId) {
+            var ImgSrc = "";
+            var SubImgSrc = "";
+            ImgSrc = ImgObj.src;
+            SubImgSrc = ImgSrc.substr(ImgSrc.length - 5, 5);
+            if (SubImgSrc == "p.ico") {
+                ImgObj.src = ImgObj.src.replace(SubImgSrc, "d.ico");
+                ImgObj.title = "收起";
+                SwitchSub(ParentId, true);
+            } else {
+                if (SubImgSrc == "d.ico") {
+                    ImgObj.src = ImgObj.src.replace(SubImgSrc, "p.ico");
+                    ImgObj.title = "展开";
+                    SwitchSub(ParentId, false);
+                } else {
+                    return false;
+                }
+            }
+        }
+        function SwitchSub(ParentId, ShowFlag) {
+            if (ShowFlag) {
+                $("#Parent" + ParentId).show();
+                if ($("#Parent" + ParentId).html() == "" || $("#Parent" + ParentId).html() == "帮助加载中...") {
+                    $("#Parent" + ParentId).html("帮助加载中...");
+                    GetSubClass(ParentId);
+                }
+            } else {
+                $("#Parent" + ParentId).hide();
+            }
+        }
+        function SwitchSub1(txtObj, ParentId) {
+            txtObj.Id = "1";
+            var ImgObj = txtObj.parentNode.childNodes[0];
+            var ImgSrc = "";
+            var SubImgSrc = "";
+            ImgSrc = ImgObj.src;
+            SubImgSrc = ImgSrc.substr(ImgSrc.length - 5, 5);
+            GetSubClass(ParentId);
+            if ($("#Parent" + ParentId).show()) {
+                $("#Parent" + ParentId).hide();
+                ImgObj.src = ImgObj.src.replace(SubImgSrc, "p.ico");
+            } else {
+                $("#Parent" + ParentId).show();
+                ImgObj.src = ImgObj.src.replace(SubImgSrc, "d.ico");
+            }
+        }
+        function SelectLable(Obj){
+            //点击左侧菜单条目触发此方法
+            var SelectedInfo = "";
+            if (SelectClass != "") {
+                SelectedInfo = SelectClass.split("***");
+                $(SelectedInfo[0]).addClass("LableItem");
+            }
+            Obj.addClass('LableSelectItem');
+            SelectClass = Obj.id + "***" + Obj.innerText + "***" + Obj.value;
+        }
+        function GetRootClass() {
+            GetSubClass("0");
+            //进入系统显示的首页内容
+            if ($("#searchkey").val() == "") {
+                $.get("HelpSearchAjax.aspx", { ClassID: "708959959638", Action: "Content", rd: Math.random() }, function (data) {
+                    if (data.indexOf("??") > -1) {
+                        $("#faqResult").show();
+                        $("#faqResult").html("Error");
+                    }
+                    else {
+                        $("#faqResult").show();
+                        $("#faqResult").html(data);
+                        $("#Title").html("<b>欢迎使用拓瑞宠物医院管理帮助系统</b>");
+                    }
+                });
+            }
+        }
+
+
+        function GetSubClass(ParentId) {
+            $.get("Help_Ajax.aspx", { ParentId: ParentId }, function (data) {
+                var ClassInfo;
+                if (data != "" && data.indexOf("|||") > -1) {
+                    ClassInfo =data.split("|||");
+                    if (ClassInfo[0] == "Succee") {
+                        $("#Parent" + ClassInfo[1]).html(ClassInfo[2]);
+                    }
+                    else {
+                        $("#Parent" + ClassInfo[1]).html("<a href=\"点击重试\" onclick=\"$('#Parent" + ClassInfo[1] + "').html('帮助加载中...');GetSubClass('" + ClassInfo[1] + "');return false;\">点击重试</a>");
+                    }
+                }
+                else {
+                    alert("读取帮助错误.\n请联系管理员.");
+                    return false;
+                }
+            });
+        }
+
+        function SubmitLable(Obj) {
+            SelectLable(Obj);
+            window.returnValue = SelectClass;
+            window.close();
+        }
+        function SetReturnValue() {
+            window.returnValue = SelectClass;
+            if (typeof (window.returnValue) != 'string') {
+                window.returnValue = '';
+            }
+        }
+        function Select(type) {
+            switch (type) {
+                case "Menu":
+                    $("#TrMenu").addClass("back2");
+                    $("#TrSearch").addClass("back1");
+                    $("#Div_Searck").hide();
+                    GetRootClass();
+                    break;
+                case "Search":
+                    $("#TrMenu").addClass("back1");
+                    $("#TrSearch").addClass("back2");
+                    $("#Div_Searck").show();
+                    $("#Parent0").empty().append("请输入要查找的内容");
+                    break;
+            }
+        }
+        function GetSeachResult(key) {
+            $("#Parent0").show().html(" <img src=\"Image/loading.gif\" />请稍侯...");
+            $.get("HelpSearchAjax.aspx?Action=Search", "Key=" + key, function (data) {
+                $("#Title").hide();
+                if (data.indexOf("??") > -1) {
+                    $("#faqResult").empty().append("Error");
+                }
+                else {
+                    $("#faqResult").empty().append(data);
+                }
+                $("#Parent0").hide();
+            });
+        }
+        //显示详细结果
+        function showTitle(obj) {
+            $.get("HelpSearchAjax.aspx", { Action: "Title", ClassID: obj.id, rd: Math.random() }, function (data) {
+                if (data.indexOf("??") > -1) {
+                    $("#Title").show();
+                    $("#Title").empty().append("Error");
+                }
+                else {
+                    $("#Title").show();
+                    $("#Title").empty().append(data);
+                }
+            });
+        }
+        function showDetail(obj) {
+            if (obj.parentNode.childNodes[0].src != null) {
+                if (obj.parentNode.childNodes[0].src.substr(obj.parentNode.childNodes[0].src.length - 5, 5) == "1.ico") {
+                    $.get("HelpSearchAjax.aspx", { Action: "Content", ClassID: obj.id, rd: Math.random() }, function (data) {
+                        if (data.indexOf("??") > -1)
+                            $("#faqResult").empty().append("Error");
+                        else
+                            $("#faqResult").empty().append(data);
+                    });
+                }
+                else {
+                    $.get("Help_Ajax.aspx", { ParentId: obj.id }, function (data) {
+                        if (data.indexOf("??") > -1) {
+                            $("#faqResult").show();
+                            $("#faqResult").empty().append("Error");
+                        }
+                        else {
+                            $("#faqResult").show();
+                            var ClassInfo = data.split("|||");
+                            $("#faqResult").empty().append(ClassInfo[2]);
+                        }
+                    });
+                }
+            } else {
+                $.get("HelpSearchAjax.aspx", { Action: "Content", ClassID: obj.id, rd: Math.random() }, function (data) {
+                    if (data.indexOf("??") > -1)
+                        $("#faqResult").empty().append("Error");
+                    else
+                        $("#faqResult").empty().append(data);
+                });
+            }
+            showTitle(obj);
+        }
+        function change() {
+            $(function () {
+                $(".span").click(function () {
+                    $("*").removeClass("active");
+                    $(this).addClass("active");
+                });
+            });
+        }
+        $(function () {
+            GetRootClass();
+            SetReturnValue();
+            $("#tj").click(function () {
+                var v = $("#searchkey").val();
+                if (v == "") {
+                    alert('请输入关键字!');
+                    return false;
+                }
+                GetSeachResult(v);
+                GetRootClass();
+            });
+        });
+    
+//]]>
+    </script>
+  </head>
+  <body ondragstart="return false;">
+    <div class="heading" style="overflow:hidden;">
+      <div class="newlogo">
+        <a href="#">
+          <!--<img src="image/NewLogo.png" height="50" />-->          <img src="http://yun.tuoruimed.com/Content/p/logo1.png" style="height:50px; padding-top:3px; float:left;padding-left:10px;"/>
+          <span style="float:left;font-family:'Microsoft YaHei';font-size:25px;line-height:33px;color:#FFF;border-left:1px solid #939393; margin:10px 0px 0px 10px; padding-left:10px;">
+            帮助中心
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="searchArea" style="overflow:hidden;padding:0,25px,5px,25px;">
+      <span style="vertical-align:middle; margin-right:5px; font-weight:100; color:#fff;">
+        问题搜索
+      </span>
+      <form id="TitleList" name="TitleList" action="" method="post">
+        <input id="searchkey" name="SearchKey" autofocus="autofocus" type="text" onkeypress="if (event.keyCode == 13) { tj.click(); return false; }" size="10" class="form" height="50" style="width:390px;height:20px;font-size:15px;vertical-align:middle;font-family:Verdana;background-color:#E9E9E9; padding:2px 0 4px 5px;border:1px solid #CCC;"/>
+        <input id="tj" type="button" name="Tj" value=" 搜索 " class="form" style="width:80px;height:28px;vertical-align:middle; background-color:#E9E9E9;font-size:13px;font-weight:bold;"/>
+      </form>
+    </div>
+    <div class="div1">
+      <table id="help2col" cellspacing="0" cellpadding="0" style="display:inline-block; width:190px">
+        <tbody>
+          <tr>
+            <td valign="top" id="colleft" width="190px" height="100%">
+              <table width="190" border="0" cellspacing="0" cellpadding="0" style="font-size:12px;">
+                <tbody>
+                  <tr>
+                    <td colspan="2" height="3"/>
+                  </tr>
+                  <tr>
+                    <td colspan="3" id="Div_Searck" style="display:none;">
+                      <br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <br/>
+                      <div id="Parent0" class="RootItem">
+                        <div>
+                          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                          <span class="span" id="708959959638" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              拓瑞宠物医院管理系统
+                            </a>
+                          </span>
+                        </div>
+                        <div>
+                          <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'604277469222');"/>
+                          <span class="span" id="604277469222" ondblclick="javascript:SwitchSub1(this,'604277469222');" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              安装运行
+                            </a>
+                          </span>
+                          <div id="Parent604277469222" class="SubItem" hassub="True" style="">
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="760637073725" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  SQL Server安装
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="619984530222" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  创建系统网络版数据库
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="306460744996" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  安装拓瑞管理系统
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="717538627453" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  设置向导
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="594768138495" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  注册
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="601137082961" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  系统激活
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'708327116645');"/>
+                          <span class="span" id="708327116645" ondblclick="javascript:SwitchSub1(this,'708327116645');" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              宠物管理系统
+                            </a>
+                          </span>
+                          <div id="Parent708327116645" class="SubItem" hassub="True" style="">
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="984935420841" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  登录
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'903005136182');"/>
+                              <span class="span" id="903005136182" ondblclick="javascript:SwitchSub1(this,'903005136182');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  会员信息
+                                </a>
+                              </span>
+                              <div id="Parent903005136182" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="349626734157" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      宠物管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="832173021098" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      会员管理
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="878708306085" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  预约管理
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'049527864239');"/>
+                              <span class="span" id="049527864239" ondblclick="javascript:SwitchSub1(this,'049527864239');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  挂号
+                                </a>
+                              </span>
+                              <div id="Parent049527864239" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="289546543828" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      会员挂号
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="579200970742" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      快捷挂号
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'996810318055');"/>
+                              <span class="span" id="996810318055" ondblclick="javascript:SwitchSub1(this,'996810318055');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  诊疗服务
+                                </a>
+                              </span>
+                              <div id="Parent996810318055" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="847441508915" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      就诊管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="184715945894" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      疫苗登记
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="089782289712" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      处方模板管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="566065506799" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      病案管理
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'657036215154');"/>
+                              <span class="span" id="657036215154" ondblclick="javascript:SwitchSub1(this,'657036215154');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  化验影像
+                                </a>
+                              </span>
+                              <div id="Parent657036215154" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="141359754802" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      化验检查
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="609911818130" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      影像检查
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="299961085146" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  护士工作站
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'517639382654');"/>
+                              <span class="span" id="517639382654" ondblclick="javascript:SwitchSub1(this,'517639382654');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  仓库管理
+                                </a>
+                              </span>
+                              <div id="Parent517639382654" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="243203398187" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      库存查询
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="794719067058" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      入库管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="562893952022" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      出库管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="279139972496" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      移库管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="704414811234" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      退货管理
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="400683968202" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  宠物寄养
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="007683642810" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  宠物住院
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'681322562503');"/>
+                              <span class="span" id="681322562503" ondblclick="javascript:SwitchSub1(this,'681322562503');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  销售服务
+                                </a>
+                              </span>
+                              <div id="Parent681322562503" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="694260826330" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      直接销售
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="768103426362" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      销售查询
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'304643583786');"/>
+                              <span class="span" id="304643583786" ondblclick="javascript:SwitchSub1(this,'304643583786');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  结算服务
+                                </a>
+                              </span>
+                              <div id="Parent304643583786" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="427136942077" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      收费管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="809286764637" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      结算单管理
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'754712920060');"/>
+                              <span class="span" id="754712920060" ondblclick="javascript:SwitchSub1(this,'754712920060');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  拓瑞检测
+                                </a>
+                              </span>
+                              <div id="Parent754712920060" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="769035957378" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      检测申请
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="912081796231" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      检测查询
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="714642197469" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      拓瑞检测提醒
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'661725795949');"/>
+                              <span class="span" id="661725795949" ondblclick="javascript:SwitchSub1(this,'661725795949');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  短信营销
+                                </a>
+                              </span>
+                              <div id="Parent661725795949" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="057642334629" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      短信查询
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="097725563387" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      自助短信
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="954772453024" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      短信提醒
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="140138422764" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      短信设置
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="667753449029" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  微信营销
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'790909570123');"/>
+                              <span class="span" id="790909570123" ondblclick="javascript:SwitchSub1(this,'790909570123');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  经营管理
+                                </a>
+                              </span>
+                              <div id="Parent790909570123" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="391767454826" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      支出管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="427305685111" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      绩效考核统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="508986697315" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      门店收支统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="991033468711" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      会员消费统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="687482926709" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      毛利统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="925137085484" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      商品采购统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="368285923105" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      商品销售统计
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'207129690228');"/>
+                              <span class="span" id="207129690228" ondblclick="javascript:SwitchSub1(this,'207129690228');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  统计报表
+                                </a>
+                              </span>
+                              <div id="Parent207129690228" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="301848404042" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      就诊分期统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="049069831566" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      挂号就诊统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="128819676862" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      营业收入统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="821275466299" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      库存资产统计
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="654086019945" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      病例统计
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'814180497697');"/>
+                              <span class="span" id="814180497697" ondblclick="javascript:SwitchSub1(this,'814180497697');" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  基础数据
+                                </a>
+                              </span>
+                              <div id="Parent814180497697" class="SubItem" hassub="True" style="">
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="647016897211" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      宠物品种管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="317315307814" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      经销商与生产商
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="398498907341" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      仓库信息管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="564327230258" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      商品与服务管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="417727515087" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      会员等级管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="786187452429" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      数据字典管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="389481368150" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      员工管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="830713276127" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      化验项目管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="572547954732" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      医院信息
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="596635951103" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      角色管理
+                                    </a>
+                                  </span>
+                                </div>
+                                <div>
+                                  <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                                  <span class="span" id="699674929725" onclick="showDetail(this)">
+                                    ?
+                                    <a href="javascript:" onclick="change()">
+                                      应用参数配置
+                                    </a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="724248939289" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  美容管理
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                          <span class="span" id="143709048923" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              微网站管理
+                            </a>
+                          </span>
+                        </div>
+                        <div>
+                          <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'014103469410');"/>
+                          <span class="span" id="014103469410" ondblclick="javascript:SwitchSub1(this,'014103469410');" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              常见问题
+                            </a>
+                          </span>
+                          <div id="Parent014103469410" class="SubItem" hassub="True" style="">
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="322838177168" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  如何升级为正式版
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="472220498639" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  如何录入我的商品
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="541003193197" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  如何设置编号规则
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="432971415227" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  输入首字母找不到商品
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="307158432314" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  如何编辑医院处方
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="325977819687" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  如何备份和还原数据
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="811829708416" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  如何找回管理员密码
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="637434008053" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  如何将会员信息和宠物信息导入到系统中
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="340151960328" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  如何使用积分功能
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <img src="http://yun.tuoruimed.com/help/image/d.ico" alt="点击展开子栏目" title="收起" width="13" height="13" border="0" class="LableItem" onclick="javascript:SwitchImg(this,'952804461429');"/>
+                          <span class="span" id="952804461429" ondblclick="javascript:SwitchSub1(this,'952804461429');" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              在线视频课堂
+                            </a>
+                          </span>
+                          <div id="Parent952804461429" class="SubItem" hassub="True" style="">
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="307125089265" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  安装与激活视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="878971670704" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  商品与服务管理视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="376690772065" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  仓库管理视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="904730491036" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  挂号就诊视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="828506101175" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  会员信息视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="332081635491" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  预约管理视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="929397983315" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  销售与退货视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="661552867563" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  寄养管理视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="265138460680" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  住院管理视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="105044954303" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  美容服务视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="157932937611" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  驱虫疫苗视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="867422826575" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  拓瑞检测视频
+                                </a>
+                              </span>
+                            </div>
+                            <div>
+                              <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                              <span class="span" id="675796974213" onclick="showDetail(this)">
+                                ?
+                                <a href="javascript:" onclick="change()">
+                                  短信与微信营销视频
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+                          <span class="span" id="065249907314" onclick="showDetail(this)">
+                            ?
+                            <a href="javascript:" onclick="change()">
+                              附录
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      <br/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="div2">
+      <p id="Title">
+        <font size="2">
+          <b cite="" datetime="">
+            诊疗服务
+          </b>
+        </font>
+      </p>
+      <div id="faqResult">
+        <div>
+          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+          <span class="span" id="847441508915" onclick="showDetail(this)">
+            ?
+            <a href="javascript:" onclick="change()">
+              就诊管理
+            </a>
+          </span>
+        </div>
+        <div>
+          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+          <span class="span" id="184715945894" onclick="showDetail(this)">
+            ?
+            <a href="javascript:" onclick="change()">
+              疫苗登记
+            </a>
+          </span>
+        </div>
+        <div>
+          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+          <span class="span" id="089782289712" onclick="showDetail(this)">
+            ?
+            <a href="javascript:" onclick="change()">
+              处方模板管理
+            </a>
+          </span>
+        </div>
+        <div>
+          <img src="image/none1.ico" alt="没有子栏目" width="13" height="13" border="0" class="LableItem"/>
+          <span class="span" id="566065506799" onclick="showDetail(this)">
+            ?
+            <a href="javascript:" onclick="change()">
+              病案管理
+            </a>
+          </span>
+        </div>
+      </div>
+      <div id="copyright">
+        <p style="color:black;text-align:center; ">
+          Tuoruimed.com ?2016  
+          <a href="http://yun.tuoruimed.com" target="_blank">
+            拓瑞宠物医院
+          </a>
+        </p>
+      </div>
+    </div>
+    <script src="Content/js/top.js">
+    </script>
+    <a href="javascript:;" onclick="gotoTop();return false;" class="totop"/>
+  </body>
+</html>

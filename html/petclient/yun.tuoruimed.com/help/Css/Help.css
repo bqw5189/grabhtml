@@ -1,0 +1,91 @@
+BODY {
+	FONT-SIZE: 11px; MARGIN: 0px; COLOR: #FFFFFF;background:#FFF; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.form {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; FONT-SIZE: 11px; BACKGROUND: #eff0f0; BORDER-LEFT: #7f9db9 1px solid; BORDER-BOTTOM: #7f9db9 1px solid; FONT-FAMILY: Verdana
+}
+.table {
+	BORDER-RIGHT: #d3dee9 1px solid; BORDER-TOP: #d3dee9 1px solid; MARGIN-TOP: 5px; FONT-SIZE: 11px; BACKGROUND: #e2f1fc; MARGIN-BOTTOM: 5px; BORDER-LEFT: #d3dee9 1px solid; BORDER-BOTTOM: #d3dee9 1px solid
+}
+.Navitable {
+	BORDER-RIGHT: #e2f2f3 1px solid; BORDER-TOP: #e2f2f3 1px solid; MARGIN-TOP: 2px; FONT-SIZE: 11px; BACKGROUND: #f5fbfe; MARGIN-BOTTOM: 5px; BORDER-LEFT: #e2f2f3 1px solid; LINE-HEIGHT: 20px; BORDER-BOTTOM: #e2f2f3 1px solid
+}
+A:link {
+	FONT-SIZE: 11px; COLOR: #4a7099; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 11px; COLOR: #4a7099; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 11px; COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.TR_BG {
+	FONT-SIZE: 11px; BACKGROUND-COLOR: #e8f8fd
+}
+.TR_BG_list {
+	FONT-SIZE: 11px; BACKGROUND-COLOR: #f8fdff
+}
+.m_down_bg {
+	BORDER-RIGHT: #b2d2f6 1px solid; BORDER-TOP: #b2d2f6 1px solid; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(../admin/m_bg_1.gif); BORDER-LEFT: #b2d2f6 1px solid; COLOR: #4b6888; BORDER-BOTTOM: #b2d2f6 1px solid; TEXT-DECORATION: none
+}
+.m_up_bg {
+	BORDER-RIGHT: #deedfa 1px solid; BORDER-TOP: #deedfa 1px solid; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(../admin/m_bg_2.gif); BORDER-LEFT: #deedfa 1px solid; COLOR: #89a5bb; BORDER-BOTTOM: #deedfa 1px solid; TEXT-DECORATION: none
+}
+.toptable {
+	FONT-SIZE: 11px; BACKGROUND-IMAGE: url(../admin/reght_1_bg_1.gif); LINE-HEIGHT: 30px
+}
+.list_link {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #4a7099; TEXT-DECORATION: none
+}
+A.list_link:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #4a7099; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.list_link:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #4a7099; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.list_link:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ff0000; LINE-HEIGHT: 20px; TEXT-DECORATION: underline
+}
+A.list_linkr:link {
+	FONT-SIZE: 11px; COLOR: #4a7099; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.list_linkr:hover {
+	FONT-SIZE: 11px; COLOR: #ffffff; LINE-HEIGHT: 20px; BACKGROUND-COLOR: blue; TEXT-DECORATION: none
+}
+.form {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; FONT-SIZE: 11px; BACKGROUND: #FFFFFF; BORDER-LEFT: #7f9db9 1px solid; BORDER-BOTTOM: #7f9db9 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.reshow {
+	FONT-SIZE: 11px; COLOR: red
+}
+.topnavichar {
+	FONT-SIZE: 11px; COLOR: #395575
+}
+A.topnavichar:link {
+	FONT-SIZE: 11px; COLOR: #395575; TEXT-DECORATION: none
+}
+A.topnavichar:visited {
+	FONT-SIZE: 11px; COLOR: #395575; TEXT-DECORATION: none
+}
+A.topnavichar:hover {
+	FONT-SIZE: 11px; COLOR: #ff0000; TEXT-DECORATION: none
+}
+.copyright {
+	FONT-SIZE: 10px
+}
+.copyright_bg {
+	FONT-SIZE: 11px; BACKGROUND-IMAGE: url(../admin/bottom_bg.gif); PADDING-TOP: 20px
+}
+.list_link_o {
+	FONT-SIZE: 11px; COLOR: #395575; LINE-HEIGHT: 20px
+}
+A.list_link_o:link {
+	FONT-SIZE: 11px; COLOR: #395575; LINE-HEIGHT: 20px; TEXT-DECORATION: underline
+}
+A.list_link_o:visited {
+	FONT-SIZE: 11px; COLOR: #395575; LINE-HEIGHT: 20px; TEXT-DECORATION: underline
+}
+A.list_link_o:hover {
+	FONT-SIZE: 11px; COLOR: #ff0000; LINE-HEIGHT: 20px; TEXT-DECORATION: underline
+}
+
