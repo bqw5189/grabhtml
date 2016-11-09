@@ -1,42 +1,32 @@
 package com.grab.html;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.CountDownLatch;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by bqw on 14-3-25.
+ * Created by tom on 16/11/9.
  */
-public class CssGrabPage implements GrabPage {
-    private PageFileEntity pageFileEntity;
+public class CssGrabPageTest {
 
-    public CssGrabPage(PageFileEntity pageFileEntity) {
-        this.pageFileEntity = pageFileEntity;
-    }
-
-    public void grab() {
-
-        File pageFile = GrabUtils.pageToFile(pageFileEntity);
-
+    @Test
+    public void grab(){
         String pageResource = "";
 
         try {
-            pageResource = FileUtils.readFileToString(pageFile);
+            pageResource = FileUtils.readFileToString(new File("/work/001_code/github/java/grabhtml/html/taurus/css/stylesheets.css"));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         String cssSource = pageResource.replaceAll(";", ";\n").replaceAll("}", "}\n");
 
-        process("url\\([\\s\\S]*?(\\))", cssSource);
+//        process("url\\([\\s\\S]*?(\\))", cssSource);
         process("@import (\"[\\s\\S]*?\")", cssSource);
-
-
-        com.grab.netty.Grab.NOT_FINSH_GRAB_PAGE.remove(pageFileEntity.getPageUrl());
 
     }
 
@@ -66,16 +56,11 @@ public class CssGrabPage implements GrabPage {
             }
             System.out.println("css urls is : " + url);
 
-            if (url.startsWith("http://") || url.startsWith("https://")){
-                Grab.grabPage(url);
-            }else{
-                Grab.grabPage(pageFileEntity.getCurrentUrl() + "/" + url);
-            }
+//            if (url.startsWith("http://") || url.startsWith("https://")){
+//                Grab.grabPage(url);
+//            }else{
+//                Grab.grabPage(pageFileEntity.getCurrentUrl() + "/" + url);
+//            }
         }
-    }
-
-    @Override
-    public void run() {
-        this.grab();
     }
 }

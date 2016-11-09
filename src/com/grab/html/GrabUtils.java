@@ -15,9 +15,11 @@ import java.io.*;
  * Created by bqw on 14-3-25.
  */
 public class GrabUtils {
-    public static final String ROOT_DIR = "/work/001_code/github/java/grabhtml/html/petclient";
-    public static final String HTTP_HOST = "http://amxui.novalx.com";
-    public static final String INDEX_PAGE = "/ui.html";
+    public static final String ROOT_DIR = "/work/001_code/github/java/grabhtml/html/taurus";
+//    public static final String HTTP_HOST = "http://amxui.novalx.com";
+//    public static final String HTTP_HOST = "http://themetrace.com/demo/quirk/templates";
+    public static final String HTTP_HOST = "http://aqvatarius.com/themes/taurus_v12/html";
+    public static final String INDEX_PAGE = "/index.html";
     public static final String PAGE_EXTRA = ".html";
     public static final String SAVE_PAGE_EXTRA = ".html";
 
